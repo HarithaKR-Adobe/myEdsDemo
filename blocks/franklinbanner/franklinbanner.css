@@ -1,8 +1,8 @@
-.section.customblock-container {
+.section.franklinbanner-container {
     background-color: blueviolet;
     color: #000;
     margin: 0;
-    .customblock > div {
+    .franklinbanner > div {
         padding: 20px;
     }
 }
