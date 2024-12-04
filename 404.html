@@ -32,10 +32,13 @@
   </script>
   <link rel="stylesheet" href="/styles/styles.css">
   <style>
+
     main.error {
+      color: var(--dark-color);
       min-height: calc(100vh - var(--nav-height));
       display: flex;
       align-items: center;
+      letter-spacing: 1px;
     }
 
     main.error .error-number {
@@ -53,13 +56,9 @@
   <header></header>
   <main class="error">
     <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
-      <h2 class="error-message">Page Not Found</h2>
-      <p class="button-container">
-        <a href="/" class="button secondary error-button-home">Go home</a>
-      </p>
+      <p style="font-size: 32px;">Sorry</p>
+      <p style="font-size: 22px">We could not find that page</p>
+      <p>Try searching or go to <a href="/">home page</a></p>
     </div>
   </main>
   <footer></footer>
