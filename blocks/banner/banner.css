@@ -1,0 +1,11 @@
+.banner.block {
+    position: relative;
+}
+.banner.block .banner-title {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
