@@ -12,3 +12,7 @@ main > .section .banner-wrapper {
     left: 0;
     right: 0;
 }
+.banner.block picture img {
+    height: 500px;
+    width: 100%;
+}
