@@ -1,7 +1,0 @@
-.customblock-container {
-    background-color: blueviolet;
-    color: #000;
-    .customblock > div {
-        padding: 20px;
-    }
-}
