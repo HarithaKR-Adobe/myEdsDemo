@@ -1,3 +1,6 @@
+main > .section .banner-wrapper {
+    padding: 0;
+}
 .banner.block {
     position: relative;
 }
