@@ -1,0 +1,16 @@
+version: 1
+indices: 
+  site: 
+    include: 
+      - '/home'
+    target: /query-index
+    properties: 
+      title: 
+        selectFirst: h1 
+        value: textContent(el)
+      author: 
+        select: head > meta[name="author"]
+        value: attribute(el, "content")
+      image: 
+        select: .carousel-slides li:nth-of-type(2) img
+        value: attribute(el, "src")
