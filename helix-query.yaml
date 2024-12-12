@@ -8,9 +8,12 @@ indices:
       title: 
         selectFirst: h1 
         value: textContent(el)
-      author: 
+      author:
         select: head > meta[name="author"]
         value: attribute(el, "content")
       image: 
-        select: .carousel-slides li:nth-of-type(2) img
-        value: attribute(el, "src")
+        select: head > meta[property="og:image"]
+        value: attribute(el, "content")
+      proxy-url: 
+        select: head > meta[property="hlx:proxyUrl"]
+        value: attribute(el, "content")
