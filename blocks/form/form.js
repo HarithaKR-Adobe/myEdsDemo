@@ -44,7 +44,7 @@ function createForm(fields, actionUrl) {
     
     fields.forEach((field) => {
         const fieldEl = document.createElement("div");
-        fieldEl.classList.add("form-field", field.Mandatory ? "required" : "");
+        fieldEl.classList.add("form-field");
         form.append(fieldEl);
         let label, input, select, button;
         switch(field.Type) {
@@ -52,6 +52,9 @@ function createForm(fields, actionUrl) {
                 label = createLabel(field);
                 input = createInput(field);
                 appendElementstoField(fieldEl, label, input);
+                if (field.Mandatory) {
+                    fieldEl.classList.add("required");
+                }
                 break;
             case "select":
                 label = createLabel(field);
