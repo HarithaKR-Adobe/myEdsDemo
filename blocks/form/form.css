@@ -11,7 +11,7 @@
     font-size: 14px;
     line-height: 19px;
     grid-template-columns: 120px 300px;
-    align-items: baseline;
+    align-items: center;
 }
 
 .form.block .form-field.required label {
